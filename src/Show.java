@@ -2,14 +2,14 @@ public class Show {
     private String date;
     private double price;
     private int qty;
-    private String preformer;
+    private String performer;
     private String city;
 
-    public Show(String date, double price, int qty, String preformer, String city) {
+    public Show(String date, double price, int qty, String performer, String city) {
         this.date = date;
         this.price = price;
         this.qty = qty;
-        this.preformer = preformer;
+        this.performer = performer;
         this.city = city;
     }
 
@@ -38,11 +38,11 @@ public class Show {
     }
 
     public String getPreformer() {
-        return preformer;
+        return performer;
     }
 
-    public void setPreformer(String preformer) {
-        this.preformer = preformer;
+    public void setPerformer(String performer) {
+        this.performer = performer;
     }
 
     public String getCity() {
@@ -59,7 +59,7 @@ public class Show {
                 "date='" + date + '\'' +
                 ", price=" + price +
                 ", qty=" + qty +
-                ", preformer='" + preformer + '\'' +
+                ", preformer='" + performer + '\'' +
                 ", city='" + city + '\'' +
                 '}';
     }
