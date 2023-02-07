@@ -2,12 +2,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
+
 
 
 public class TicketMasterDriver {
 
-    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("        ****Welcome to the Ticket Master Kiosk****");
         System.out.println("You may search shows by city as well as by performer and ticket price.");
@@ -20,26 +19,7 @@ public class TicketMasterDriver {
                 "5.Sort by Price (Low - High)\n" +
                 "6.Quit\n\n\n");
 
-        String input = scanner.nextLine();
 
-        if (input.equalsIgnoreCase("1")){
-
-        }
-        if (input.equalsIgnoreCase("2")){
-
-        }
-        if (input.equalsIgnoreCase("3")){
-
-        }
-        if (input.equalsIgnoreCase("4")){
-
-        }
-        if (input.equalsIgnoreCase("5")){
-
-        }
-        if (input.equalsIgnoreCase("6")){
-
-        }
         File file = new File("H:\\AP Java\\TicketMaster\\src\\showData.txt");
         System.out.println("Date \t\tPrice \t  Qty \tPerformer \t\t   City");
         System.out.println("--------------------------------------------------------------");

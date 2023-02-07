@@ -1,7 +1,9 @@
 import java.io.*;
 import java.util.ArrayList;
-
+import java.util.Scanner;
 public class TicketMaster {
+
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
     }
@@ -38,6 +40,9 @@ public class TicketMaster {
             return -1; // value is not found
     }
 
-    //public String citySearch(ArrayList<String>)
+    public String citySearch(){
+
+    }
+
     //public String sortByPer(ArrayList<String>)
 }
