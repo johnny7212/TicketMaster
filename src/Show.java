@@ -1,16 +1,20 @@
 public class Show {
     private String date;
-    private double price;
-    private int qty;
+    private String price;
+    private String qty;
     private String performer;
     private String city;
 
-    public Show(String date, double price, int qty, String performer, String city) {
+
+    public Show(String date, String price, String qty, String performer, String city) {
         this.date = date;
         this.price = price;
         this.qty = qty;
         this.performer = performer;
         this.city = city;
+    }
+
+    public static void add(Show show1) {
     }
 
     public String getDate() {
@@ -21,19 +25,19 @@ public class Show {
         this.date = date;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
-    public int getQty() {
+    public String getQty() {
         return qty;
     }
 
-    public void setQty(int qty) {
+    public void setQty(String qty) {
         this.qty = qty;
     }
 

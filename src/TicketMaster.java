@@ -1,6 +1,23 @@
+import java.io.*;
 import java.util.ArrayList;
 
 public class TicketMaster {
+    public static void main(String[] args) {
+
+    }
+
+    // made through the help of Parth
+    public void library() throws IOException {
+        File file = new File("H:\\AP Java\\TicketMaster\\src\\showData.txt");
+        BufferedReader n = new BufferedReader(new FileReader(file));
+        String ln = n.readLine();
+        while (ln != null){
+            String[] splitln = ln.split("");
+            ln = n.readLine();
+            Show show1 = new Show(splitln[0], splitln[1], splitln[2],splitln[3].replace("-","").replace(",",""),splitln[4]);
+            Show.add(show1);
+        }
+    }
 
     public int binarySearch(ArrayList<Integer> list, int target)
     {
@@ -21,5 +38,6 @@ public class TicketMaster {
             return -1; // value is not found
     }
 
-    public String citySearch(ArrayList<String>                         )
+    //public String citySearch(ArrayList<String>)
+    //public String sortByPer(ArrayList<String>)
 }
